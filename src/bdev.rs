@@ -279,7 +279,7 @@ where
     }
 
     /// Returns a reference to the underlying `spdk_bdev` structure.
-    pub(crate) fn as_inner_ref(&self) -> &spdk_bdev {
+    pub fn as_inner_ref(&self) -> &spdk_bdev {
         unsafe { self.inner.as_ref() }
     }
 
